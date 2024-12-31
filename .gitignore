@@ -1,0 +1,14 @@
+# Ignore LaTeX files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Ignore Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore PDF files
+*.pdf
