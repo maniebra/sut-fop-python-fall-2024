@@ -1,0 +1,68 @@
+\documentclass{report}[a4paper]
+
+% THIRD PARTY PACKAGES
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[many]{tcolorbox}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{varwidth}
+\usepackage{xepersian}
+
+% CUSTOM STYLES
+\input{styles/warning-box}
+
+\settextfont{X Yekan}
+
+
+\begin{document}
+\include{sections/info/title-page}
+
+\newpage
+\tableofcontents
+
+\newpage
+\include{sections/info/rules}
+
+
+\chapter{بخش اجباری (۲۰۰۰ نمره)}
+\begin{center}
+    \begin{warningbox}
+        \Large
+        جمع نمرات این بخش ۲۰۰۰ نمره است که معادل ۲ نمره از کل درس می‌باشد.
+        انـجام موارد ذکر شده در این بخش اجباری است.
+    \end{warningbox}
+\end{center}
+
+\section{تعریف کلاس برای مدل‌های مورد نیاز (۲۵۰ نمره)}
+
+\section{ایجاد فرآیند ثبت‌نام و ورود (۱۰۰ نمره)}
+
+\section{ذخیره‌ی اطلاعات کاربران (دانشجویان و اساتید) روی فایل (۱۰۰ نمره)}
+
+\section{ساخت شیت لیست کلاسی با \lr{Pandas} (۱۵۰ نمره)}
+
+\section{استخراج شیت کلاسی با فرمت \texttt{CSV} و \texttt{XLSX} (۵۰ نمره)}
+
+\section{محاسبه نمره و اعمال نمودار روی نمره (۵۰ نمره)}
+
+\section{پویا کردن داده‌ها با استفاده از فرمول‌های اکسل (۵۰ نمره)}
+
+\chapter{بخش اختیاری (۵۰۰ نمره)}
+\begin{center}
+    \begin{warningbox}
+        \Large
+        جمع نمرات این بخش ۵۰۰ نمره است که معادل ۰٫۵ نمره از کل درس می‌باشد.
+        انـجام موارد ذکر شده در این بخش اجباری نیست اما نمره‌ی امتیازی بر روی کل درس دارد.
+    \end{warningbox}
+\end{center}
+
+\section{استفاده از \lr{Git} (۱۲۰ نمره)}
+
+\section{ایجاد رابط کاربری گرافیکی (۱۳۰ نمره)}
+
+\section{انتشار روی \lr{GitHub} (۵۰ نمره)}
+
+
+\chapter{ضمیمه ۱: ماژول‌های قابل توجه}
+\end{document}

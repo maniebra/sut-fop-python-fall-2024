@@ -1,0 +1,30 @@
+% Define colors
+\definecolor{warning-bg}{RGB}{255, 253, 205}
+\definecolor{warning-border}{RGB}{30, 255, 255}
+\definecolor{warning-title}{RGB}{51, 51, 51}
+
+\newtcolorbox{warningbox}[1][]{%
+    enhanced,
+    colback=warning-bg,
+    colframe=warning-border,
+    boxrule=0pt,
+    borderline west={3pt}{0pt}{warning-border},
+    sharp corners,
+    title={\large\bfseries\textcolor{black}{⚠\hspace{2mm}توجه!}},
+    attach boxed title to top left={
+        xshift=0mm,
+        yshift*=-\tcboxedtitleheight/2
+    },
+    boxed title style={
+        sharp corners,
+        size=small,
+        colback=warning-border,
+        colframe=warning-border,
+    },
+    fonttitle=\bfseries,
+    coltitle=black,
+    before skip=2mm,
+    after skip=2mm,
+    breakable,
+    #1
+}

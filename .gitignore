@@ -1,14 +1,22 @@
+# Ignore IDE files
+.idea
+.vscode
+
 # Ignore LaTeX files
 *.aux
 *.log
 *.out
 *.synctex.gz
+*.synctex(busy)
 *.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz(busy)
+*.xdv
+*.bbl
+*.blg
 
 # Ignore Python files
 *.pyc
 *.pyo
 *.pyd
-
-# Ignore PDF files
-*.pdf

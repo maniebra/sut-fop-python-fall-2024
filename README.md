@@ -10,11 +10,11 @@ The course is designed to provide students with a comprehensive understanding of
 
 | Name | Role | Github |
 | --- | --- | --- |
-| Ali Abrishami | Instructor | [@abrishami](https://github.com/abrishami) |
-| Mani Ebrahimi | Head of Exercises | [@maniebrahimi](https://github.com/maniebra) |
-| Nima Pashabadi | Teaching Assistant | [@NimaPashabadi](https://github.com/NimaPashabadi) |
-| Mohammad Amin Heidari | Teaching Assistant | [@Hemenam](https://github.com/Hemenam) |
-| Seyyed Amir Mohammad Jazayeri | Teaching Assistant | [@amirjaz](https://github.com/amirjaz) |
+| **Ali Abrishami** | Instructor | [@abrishami](https://github.com/abrishami) |
+| **Mani Ebrahimi** | Head of Exercises | [@maniebra](https://github.com/maniebra) |
+| **Nima Pashabadi** | Teaching Assistant | [@NimaPashabadi](https://github.com/NimaPashabadi) |
+| **Mohammad Amin Heidari** | Teaching Assistant | [@Hemenam](https://github.com/Hemenam) |
+| **Seyyed Amir Mohammad Jazayeri** | Teaching Assistant | [@amirjaz](https://github.com/amirjaz) |
 
 ## Table of Contents
 
