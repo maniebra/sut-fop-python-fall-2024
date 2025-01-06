@@ -41,6 +41,12 @@
 %---------------------------------------------
 % Section style
 %---------------------------------------------
+\makeatletter
+\renewcommand\thesection{\@arabic\c@section.\@arabic\c@chapter}
+\makeatother
+\makeatletter
+\renewcommand\thesubsection{\@arabic\c@subsection.\@arabic\c@section.\@arabic\c@chapter}
+\makeatother
 \titleformat{\section}
   [block]
   {\Large\bfseries\raggedleft\color{cp-dark-cyan}}
