@@ -1,30 +1,39 @@
 % Define colors
-\definecolor{warning-bg}{RGB}{255, 253, 205}
-\definecolor{warning-border}{RGB}{30, 255, 255}
-\definecolor{warning-title}{RGB}{51, 51, 51}
+\definecolor{warning-bg}{HTML}{00AAAA}
+\definecolor{warning-border}{HTML}{008080}
+\definecolor{warning-title}{RGB}{255, 255, 255}
 
 \newtcolorbox{warningbox}[1][]{%
     enhanced,
-    colback=warning-bg,
-    colframe=warning-border,
-    boxrule=0pt,
-    borderline west={3pt}{0pt}{warning-border},
-    sharp corners,
-    title={\large\bfseries\textcolor{black}{⚠\hspace{2mm}توجه!}},
-    attach boxed title to top left={
-        xshift=0mm,
-        yshift*=-\tcboxedtitleheight/2
-    },
-    boxed title style={
-        sharp corners,
-        size=small,
-        colback=warning-border,
-        colframe=warning-border,
-    },
-    fonttitle=\bfseries,
-    coltitle=black,
     before skip=2mm,
     after skip=2mm,
-    breakable,
+    colback=warning-bg!10!white,
+    colframe=warning-bg!60!warning-border,
+    boxrule=1.2mm,
+    sharp corners,
+    arc=0mm,
+    auto outer arc,
+    attach boxed title to top left={
+        xshift=1cm,
+        yshift*=1mm-\tcboxedtitleheight
+    },
+    varwidth boxed title*=-3cm,
+    boxed title style={
+        colback=warning-bg!70!warning-border,
+        colframe=warning-bg!80!warning-border,
+        sharp corners,
+        boxrule=0.8mm
+    },
+    title={\large\bfseries\textcolor{warning-title}{توجه!}},
+    colbacktitle=warning-bg!70!warning-border,
+    interior style={
+        fill=warning-bg!10!white
+    },
+    frame style={
+        color=warning-bg!60!warning-border
+    },
+    borderline={0.8mm}{0mm}{warning-bg!80!warning-border},
+    borderline={0.4mm}{0.6mm}{warning-border!40!warning-bg},
+    shadow={2mm}{-2mm}{0mm}{black},
     #1
 }

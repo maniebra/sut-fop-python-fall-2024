@@ -1,28 +1,35 @@
-\documentclass{report}[a4paper]
+\documentclass[a4paper]{report}
 
 % THIRD PARTY PACKAGES
 \usepackage[margin=2cm]{geometry}
 \usepackage{fontspec}
 \usepackage[many]{tcolorbox}
+\usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
 \usepackage{varwidth}
+\usepackage{tikz}
+\usepackage{titlesec}
 \usepackage{xepersian}
 
 % CUSTOM STYLES
+\usepackage{styles/headings}
 \input{styles/warning-box}
 
-\settextfont{X Yekan}
+\settextfont[Scale=1.0]{X Yekan}
 
 
 \begin{document}
-\include{sections/info/title-page}
+
+
+\input{sections/info/title-page}
 
 \newpage
 \tableofcontents
 
 \newpage
-\include{sections/info/rules}
+\input{sections/info/rules}
 
 
 \chapter{بخش اجباری (۲۰۰۰ نمره)}
@@ -48,11 +55,11 @@
 
 \section{پویا کردن داده‌ها با استفاده از فرمول‌های اکسل (۵۰ نمره)}
 
-\chapter{بخش اختیاری (۵۰۰ نمره)}
+\chapter{بخش اختیاری (۱۰۰۰ نمره)}
 \begin{center}
     \begin{warningbox}
         \Large
-        جمع نمرات این بخش ۵۰۰ نمره است که معادل ۰٫۵ نمره از کل درس می‌باشد.
+        جمع نمرات این بخش ۱۰۰۰ نمره است که معادل ۱ نمره از کل درس می‌باشد.
         انـجام موارد ذکر شده در این بخش اجباری نیست اما نمره‌ی امتیازی بر روی کل درس دارد.
     \end{warningbox}
 \end{center}

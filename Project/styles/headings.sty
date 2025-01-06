@@ -1,0 +1,68 @@
+% headings.sty
+% A modern Persian style for XeLaTeX with a Cyberpunk 2077 vibe.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{headings}
+
+%---------------------------------------------
+% Required packages
+%---------------------------------------------
+\RequirePackage{xepersian}  % Persian typesetting
+\RequirePackage{titlesec}   % Customizing headings
+\RequirePackage{xcolor}     % Colors
+\RequirePackage{tikz}       % Drawing shapes
+
+\usetikzlibrary{backgrounds}
+%---------------------------------------------
+% Define a neon-like color palette
+%---------------------------------------------
+\definecolor{cp-neon-pink}{HTML}{FF2020}  % Vibrant pink
+\definecolor{cp-neon-cyan}{HTML}{00AAAA}  % Bright neon-cyan
+\definecolor{cp-dark-cyan}{HTML}{008080}  % Dark cyan
+\definecolor{cp-neon-yellow}{HTML}{FFFF00}
+\definecolor{cp-dark-gray}{HTML}{2B2B2B}  % Dark background color
+\definecolor{cp-neon-white}{HTML}{FFFFFF}
+
+%---------------------------------------------
+% Chapter style
+%---------------------------------------------
+\titleformat{\chapter}
+  [block]
+  {\Huge\bfseries\raggedleft\color{cp-dark-cyan}}
+  {}
+  {0em}
+  {\begin{tikzpicture}[baseline=-2.6ex, left=42ex, below=5.2ex, overlay, z=-100]
+    \begin{pgfonlayer}{background}
+        \fill[cp-dark-cyan, opacity=0.2] (0.9\textwidth-4,0) -- (0.9\textwidth,5.2ex) -- (0.2,5.2ex) -- (0,0) -- cycle;
+        \draw[cp-dark-cyan] (0.9\textwidth-4,0) -- (0.9\textwidth,5.2ex) -- (0.2,5.2ex) -- (0,0) -- cycle;
+    \end{pgfonlayer}
+    \end{tikzpicture}}
+  [\vspace{0ex}\color{cp-dark-cyan}\titlerule]
+
+%---------------------------------------------
+% Section style
+%---------------------------------------------
+\titleformat{\section}
+  [block]
+  {\Large\bfseries\raggedleft\color{cp-dark-cyan}}
+  {\textcolor{cp-dark-cyan}{\thesection}}
+  {1em}
+  {\begin{tikzpicture}[baseline=(current bounding box.center),rotate=45]
+      \fill[cp-neon-cyan] (0,0) rectangle (0.2,1.2ex);
+   \end{tikzpicture}\quad}
+  [\vspace{0.5ex}\titlerule]
+
+%---------------------------------------------
+% Subsection style
+%---------------------------------------------
+\titleformat{\subsection}
+  [block]
+  {\large\bfseries\raggedleft\color{cp-neon-pink}}
+  {\textcolor{cp-neon-cyan}{\thesubsection}}
+  {1em}
+  {\begin{tikzpicture}[baseline=(current bounding box.center)]
+      \fill[cp-neon-pink] (0,0) rectangle (0.15,1.0ex);
+   \end{tikzpicture}\quad}
+  [\vspace{0.5ex}\titlerule]
+
+\endinput
