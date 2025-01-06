@@ -12,9 +12,9 @@ The course is designed to provide students with a comprehensive understanding of
 | --- | --- | --- |
 | **Ali Abrishami** | Instructor | [@abrishami](https://github.com/abrishami) |
 | **Mani Ebrahimi** | Head of Exercises | [@maniebra](https://github.com/maniebra) |
-| **Nima Pashabadi** | Teaching Assistant | [@NimaPashabadi](https://github.com/NimaPashabadi) |
-| **Mohammad Amin Heidari** | Teaching Assistant | [@Hemenam](https://github.com/Hemenam) |
-| **Seyyed Amir Mohammad Jazayeri** | Teaching Assistant | [@amirjaz](https://github.com/amirjaz) |
+| **Nima Pashabadi** | Teaching Assistant (HW4) | [@NimaPashabadi](https://github.com/NimaPashabadi) |
+| **Mohammad Amin Heidari** | Teaching Assistant (HW3) | [@Hemenam](https://github.com/Hemenam) |
+| **Seyyed Amir Mohammad Jazayeri** | Teaching Assistant (HW2) | [@amirjaz](https://github.com/amirjaz) |
 
 ## Table of Contents
 
