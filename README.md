@@ -34,3 +34,12 @@ The course is designed to provide students with a comprehensive understanding of
 - [Quera](https://quera.org): a platform for hosting and grading homeworks and projects
 - [SharifJudge (Quera's Grader)](https://github.com/mjnaderi/Sharif-Judge): a tool for grading homeworks and projects
 - [Python Unittest](https://docs.python.org/3/library/unittest.html): a framework for writing and running tests in Python
+
+# Special Thanks to
+
+| Name | Role |
+| --- | --- |
+| [**Farbod Haji Mohammad Ali**](https://github.com/farbodhma) | Head of Workshops |
+| **Firoozeh Abrishami** | Head of Exams |
+| **Mehrsa Malekzadeh** | Workshops |
+| **Mahla Entezari** | Workshops |
