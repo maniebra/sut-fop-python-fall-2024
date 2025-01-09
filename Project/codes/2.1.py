@@ -1,0 +1,3 @@
+STUDENTS = []
+TEACHERS = []
+COURSES = []

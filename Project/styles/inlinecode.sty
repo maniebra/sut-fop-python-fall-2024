@@ -1,0 +1,20 @@
+\RequirePackage{xcolor}
+\RequirePackage{fancybox}
+
+\definecolor{theme-color}{HTML}{008080}
+
+\newcommand{\code}[1]{%
+    \tcbox[
+        on line,
+        arc=2pt,
+        colback=darkgray!13,
+        colframe=gray!5,
+        boxrule=0pt,
+        left=2pt,
+        right=2pt,
+        top=2pt,
+        bottom=2pt,
+        boxsep=0pt,
+        nobeforeafter
+    ]{\ttfamily\small\textcolor{darkgray!30!theme-color}{#1}}%
+}

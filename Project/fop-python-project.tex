@@ -11,11 +11,16 @@
 \usepackage{varwidth}
 \usepackage{tikz}
 \usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{listings}
 \usepackage{xepersian}
 
 % CUSTOM STYLES
 \usepackage{styles/headings}
 \input{styles/warning-box}
+\usepackage{styles/inlinecode}
+\usepackage{styles/codeblock}
+
 
 \settextfont[Scale=1.0]{X Yekan}
 
@@ -41,7 +46,7 @@
     \end{warningbox}
 \end{center}
 
-\section{تعریف کلاس برای مدل‌های مورد نیاز (۴۰۰ نمره)}
+\section{پیاده‌سازی ساختارهای داده‌ای برای مدل‌ها با استفاده از لغت‌نامه (۲۰۰ نمره)}
 \input{sections/tasks/mandatory/classes}
 
 \section{ایجاد فرآیند ثبت‌نام و ورود (۲۰۰ نمره)}
@@ -59,10 +64,10 @@
 \section{ذخیره‌ی اطلاعات کاربران (دانشجویان و اساتید) و کلاس‌ها روی فایل (۳۰۰ نمره)}
 \input{sections/tasks/mandatory/save-data}
 
-\section{ساخت شیت لیست کلاسی با \lr{Pandas} (۱۵۰ نمره)}
+\section{ساخت شیت لیست کلاسی با \lr{Pandas} (۲۵۰ نمره)}
 \input{sections/tasks/mandatory/create-pandas-sheet}
 
-\section{استخراج شیت کلاسی با فرمت \texttt{CSV} و \texttt{XLSX} (۱۰۰ نمره)}
+\section{استخراج شیت کلاسی با فرمت \texttt{CSV} و \texttt{XLSX} (۲۰۰ نمره)}
 \input{sections/tasks/mandatory/export-sheet}
 
 \section{محاسبه نمره و اعمال نمودار روی نمره (۱۵۰ نمره)}
@@ -80,10 +85,13 @@
     \end{warningbox}
 \end{center}
 
+\section{استفاده از رویکرد شی‌گرا (۱۵۰ نمره)}
+\input{sections/tasks/optional/object-oriented}
+
 \section{پیاده‌سازی امکان عدم نیاز به ورود مجدد پس از ورود دوباره به برنامه (۱۰۰ نمره)}
 \input{sections/tasks/optional/stay-logged-in}
 
-\section{ایجاد تست \lr{(Unit Test)} (۲۰۰ نمره)}
+\section{ایجاد تست \lr{(Unit Test)} (۵۰ نمره)}
 \input{sections/tasks/optional/unit-test}
 
 \section{استفاده از \lr{Git} (۲۰۰ نمره)}

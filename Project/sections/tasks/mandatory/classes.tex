@@ -1,8 +1,68 @@
-\subsection{دانشجو \lr{(Student)}}
+در این بخش شما موظفید تا ساختار‌های داده‌ای مورد نیاز برای مدل‌ها را با استفاده از لغت‌نامه\footnote{\lr{dictionary}} پیاده‌سازی کنید. این بخش را دقیقا می‌توانید مانند سوال چهارم تمرین ۳ یا سوال آخر تمرین ۴ پیاده کنید؛ به این صورت که مشخصات هر مدل را به صورت یک کلید\footnote{\lr{key}} قرار داده و مقداردهی آن را از طریق مقدار\footnote{\lr{value}} انـجام دهید. همچنین می‌توانید به منظور ذخیره‌سازی تمام این لغت‌نامه‌ها از یک لیست\footnote{\lr{list}} استفاده کنید.
 
-\subsection{استاد \lr{(Teacher)}}
+\subsection{مدل دانشجو \lr{(Student)}}
 
-\subsection{مدیر \lr{(Manager)}}
+مشخصات یک مدل دانشجو به شکل زیر است:
 
-\subsection{درس \lr{(Course)}}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        کلید & نوع داده \\
+        \hline
+        \code{id} & \code{int} \\
+        \code{name} & \code{str} \\
+        \code{family} & \code{str} \\
+        \code{email} & \code{str} \\
+        \code{password} & \code{str} \\
+        \code{phone} & \code{str} \\
+        \code{address} & \code{str} \\
+        \hline
+    \end{tabular}
+\end{table}
 
+\subsection{مدل استاد \lr{(Teacher)}}
+
+مشخصات یک مدل استاد به شکل زیر است:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        کلید & نوع داده \\
+        \hline
+        \code{id} & \code{int} \\
+        \code{name} & \code{str} \\
+        \code{family} & \code{str} \\
+        \code{email} & \code{str} \\
+        \code{password} & \code{str} \\
+        \code{phone} & \code{str} \\
+        \code{address} & \code{str} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{مدل درس \lr{(Course)}}
+
+مدل هر درس به صورت زیر خواهد بود:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        کلید & نوع داده \\
+        \hline
+        \code{id} & \code{int} \\
+        \code{name} & \code{str} \\
+        \code{description} & \code{str} \\
+        \code{teacher} & \code{int} \\
+        \code{students} & \code{list[int]} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{شکل نهایی کد شما}
+
+بخشی از کدتان که در آن داده‌ساختار‌ها را ذخیره کرده‌اید، به شکل زیر خواهد بود:
+
+\sourcecode{codes/2.1.py}

@@ -1,0 +1,82 @@
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\RequirePackage{tcolorbox}
+
+% Define colors for modern code block theme (light mode)
+\definecolor{code-bg}{RGB}{245, 245, 245}
+\definecolor{code-frame}{RGB}{220, 220, 220}
+\definecolor{code-text}{RGB}{51, 51, 51}
+\definecolor{code-close}{RGB}{255, 95, 86}
+\definecolor{code-minimize}{RGB}{255, 189, 46}
+\definecolor{code-maximize}{RGB}{39, 201, 63}
+\definecolor{code-topbar}{RGB}{235, 235, 235}
+\definecolor{code-comment}{RGB}{128, 128, 128}
+\definecolor{code-keyword}{RGB}{147, 49, 185}
+\definecolor{code-string}{RGB}{66, 128, 59}
+\definecolor{code-number}{RGB}{168, 99, 30}
+
+% Configure listings style for code blocks
+\lstdefinestyle{codeblockstyle}{
+    basicstyle=\ttfamily\small\color{code-text},
+    backgroundcolor=\color{code-bg},
+    numbers=none,
+    breaklines=true,
+    breakatwhitespace=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    captionpos=b,
+    keepspaces=true,
+    columns=flexible,
+    frame=none,
+    commentstyle=\color{code-comment},
+    keywordstyle=\color{code-keyword},
+    stringstyle=\color{code-string},
+    numberstyle=\color{code-number},
+    identifierstyle=\color{code-text}
+}
+
+% Create the code block environment
+\newenvironment{codeblock}{%
+    \begin{latin}
+        
+        \begin{tcolorbox}[
+            enhanced,
+            arc=6pt,
+            outer arc=6pt,
+            colback=code-bg,
+            colframe=code-frame,
+            boxrule=0.5pt,
+            left=8pt,
+            right=8pt,
+            top=25pt,
+            bottom=8pt,
+            before skip=5mm,
+            after skip=5mm,
+            left skip=5mm,
+            right skip=5mm,
+            overlay={
+                % Clean topbar
+                \fill[code-topbar] 
+                (frame.north west) [rounded corners=6pt] rectangle ([yshift=-20pt]frame.north east);
+                \fill[code-topbar] 
+                ([yshift=-20pt]frame.north west) rectangle ([yshift=-12.5pt]frame.north east);
+                
+                % Window control buttons
+                \fill[code-close] ([xshift=15pt, yshift=-10pt]frame.north west) circle (4pt);
+                \fill[code-minimize] ([xshift=30pt, yshift=-10pt]frame.north west) circle (4pt);
+                \fill[code-maximize] ([xshift=45pt, yshift=-10pt]frame.north west) circle (4pt);
+                
+            % Code block title
+            \node[text=black!80, font=\small\sffamily] 
+            at ([yshift=-10pt]frame.north) {Code};
+            }
+        ]
+        \lstset{style=codeblockstyle}
+        }{%
+    \end{tcolorbox}
+    \end{latin}
+}
+
+\newcommand{\sourcecode}[1]{\begin{codeblock}\lstinputlisting[language=python]{#1}\end{codeblock}}
