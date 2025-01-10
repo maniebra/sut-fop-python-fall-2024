@@ -41,5 +41,6 @@ The course is designed to provide students with a comprehensive understanding of
 | --- | --- |
 | [**Farbod Haji Mohammad Ali**](https://github.com/farbodhma) | Head of Workshops |
 | **Firoozeh Abrishami** | Head of Exams |
+| [**Keivan Mirhosseini**](https://github.com/Keivan-Mi) | For his consultation on the project |
 | **Mehrsa Malekzadeh** | Workshops |
 | **Mahla Entezari** | Workshops |
