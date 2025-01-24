@@ -12,55 +12,51 @@
     \item \textbf{اتصال مخزن محلی به GitHub}:\\\\
     برای اتصال مخزن \lr{Git} محلی به مخزن ایجادشده در \lr{GitHub}، دستور زیر را اجرا کنید:
     
-    \begin{LTR}
+    \begin{terminal}
     \begin{lstlisting}[language=bash]
     git remote add origin https://github.com/username/repository.git
     \end{lstlisting}
-    \end{LTR}
+    \end{terminal}
 
     \item \textbf{ارسال تغییرات به GitHub}:\\\\
     برای ارسال تغییرات ثبت‌شده به \lr{GitHub}، دستورات زیر را اجرا کنید
-    \begin{LTR}
+    \begin{terminal}
     \begin{lstlisting}[language=bash]
     git push -u origin main
     \end{lstlisting}
-    \end{LTR}  
+    \end{terminal}  
     
     \item \textbf{کلون کردن مخزن از GitHub}:\\\\
     برای دریافت یک مخزن موجود از \lr{GitHub} روی سیستم خود، دستور زیر را اجرا کنید:
-    \begin{LTR}
+    \begin{terminal}
     \begin{lstlisting}[language=bash]
     git clone https://github.com/username/repository.git
     \end{lstlisting}
-    \end{LTR} 
+    \end{terminal} 
 
      \item \textbf{مدیریت تغییرات در GitHub}:\\\\
      برای مشاهده سوابق تغییرات، دستور زیر را اجرا کنید:
-     \begin{LTR}
+     \begin{terminal}
     \begin{lstlisting}[language=bash]
     git log
     \end{lstlisting}
-    \end{LTR} 
+    \end{terminal} 
 
     \item \textbf{برای همگام‌سازی تغییرات جدید از مخزن GitHub، از دستور زیر استفاده کنید:}:\\\\
-    \begin{LTR}
+    \begin{terminal}
     \begin{lstlisting}[language=bash]
     git pull origin main
     \end{lstlisting}
-    \end{LTR} 
+    \end{terminal} 
 
     \item \textbf{ایجاد شاخه جدید برای ویژگی‌ها}:\\\\
     برای توسعه ویژگی‌های جدید بدون تأثیر بر شاخه اصلی:
-    \begin{LTR}
+    \begin{terminal}
     \begin{lstlisting}[language=bash]
     git branch feature-branch
     git checkout feature-branch
     \end{lstlisting}
-    \end{LTR} 
+    \end{terminal} 
     
     
 \end{enumerate}
-
-
-
-\end{document}
