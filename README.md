@@ -45,3 +45,4 @@ The course is designed to provide students with a comprehensive understanding of
 | **Mehrsa Malekzadeh** | Workshops |
 | **Mahla Entezari** | Workshops |
 | [**Seyed Mohammadreza Javadi**](https://github.com/JavadiSM) | Exams |
+| [**Bardia Mandegar**](https://github.com/Bardia-Mandegar) | Exams |
