@@ -29,13 +29,25 @@ The course is designed to provide students with a comprehensive understanding of
 - Unused Problems
     - [Unused Problems](./HW-Unused)
 
+## Top Projects
+
+The top projects of this course are listed here:
+
+| Team Member #1 | Team Member #2 | GitHub Repository |
+| -------------- | -------------- | ----------------- |
+| Katayoun Salimipour | Rozhin Sadaat Amiri Naeini | [[https://github.com/KatayounSR/lms_project]] |
+| Asra Rajabi | Haniyeh Heirani | [[https://github.com/Asrarajabi/LMS]] |
+
+
 ## Tools and Websites Used Throughout the Course
 
 - [Quera](https://quera.org): a platform for hosting and grading homeworks and projects
 - [SharifJudge (Quera's Grader)](https://github.com/mjnaderi/Sharif-Judge): a tool for grading homeworks and projects
 - [Python Unittest](https://docs.python.org/3/library/unittest.html): a framework for writing and running tests in Python
 
+
 # Special Thanks to
+
 
 | Name | Role |
 | --- | --- |
