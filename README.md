@@ -35,8 +35,8 @@ The top projects of this course are listed here:
 
 | Team Member #1 | Team Member #2 | GitHub Repository |
 | -------------- | -------------- | ----------------- |
-| Katayoun Salimipour | Rozhin Sadaat Amiri Naeini | [[https://github.com/KatayounSR/lms_project]] |
-| Asra Rajabi | Haniyeh Heirani | [[https://github.com/Asrarajabi/LMS]] |
+| Katayoun Salimipour | Rozhin Sadaat Amiri Naeini | https://github.com/KatayounSR/lms_project |
+| Asra Rajabi | Haniyeh Heirani | https://github.com/Asrarajabi/LMS |
 
 
 ## Tools and Websites Used Throughout the Course
